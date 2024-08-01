@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Rock Paper Scissors</h1>
+            </header>
 
-    <div class="container">
-      <header>
-        <h1>Rock Paper Scissors</h1>
-      </header>
+            <div class="scoreBoard">
+                <div id="userLabel" class="badge">user</div>
+                <div id="compLabel" class="badge">comp</div>
+                <div class="score">
+                    <span id="userScore">0</span>:<span id="compScore">0</span>
+                </div>
+            </div>
 
-      <div class="scoreBoard">
-        <div id="userLabel" class="badge">user</div>
-        <div id="compLabel" class="badge">comp</div>
-        <div class="score">
-          <span id="userScore">0</span>:<span id="compScore">0</span>
+            <div class="result">
+                <p>Paper covers rock. You win!</p>
+            </div>
+
+            <div class="choices">
+                <div class="choice" id="rock">
+                    <img src="resources/rock.png" alt="Rock" />
+                </div>
+                <div class="choice" id="paper">
+                    <img src="resources/paper.png" alt="Paper" />
+                </div>
+                <div class="choice" id="scissors">
+                    <img src="resources/scissors.png" alt="Scissors" />
+                </div>
+            </div>
+
+            <p id="actionMessage">Make your move</p>
         </div>
-      </div>
 
-      <div class="result">
-        <p>Paper covers rock. You win!</p>
-      </div>
-
-      <div class="choices">
-        <div class="choice" id="rock">
-          <img src="resources/rock.png" alt="Rock" />
-        </div>
-        <div class="choice" id="paper">
-          <img src="resources/paper.png" alt="Paper" />
-        </div>
-        <div class="choice" id="scissors">
-          <img src="resources/scissors.png" alt="Scissors" />
-        </div>
-      </div>
-
-      <p id="actionMessage">Make your move</p>
-    </div>
-
-    <script src="app.js"></script>
-  </body>
+        <script src="app.js"></script>
+    </body>
 </html>
